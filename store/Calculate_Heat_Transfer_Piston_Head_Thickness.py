@@ -15,6 +15,7 @@ K = st.number_input("Enter K (thermal conductivity of the material):", value=1.0
 temperature_center = st.number_input("Enter temperature at the center (in degrees Celsius):", value=100.0, min_value=0.1)
 temperature_edge = st.number_input("Enter temperature at the edge (in degrees Celsius):", value=20.0, min_value=0.1)
 
+
 # Calculate piston head thickness using the heat transfer formula
 thickness_heat_transfer = calculate_thickness_heat_transfer(H, K, temperature_center, temperature_edge)
 
